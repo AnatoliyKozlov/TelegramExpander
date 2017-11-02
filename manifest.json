@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "Telegram expander",
+  "version": "1.0",
+  "icons": {
+    "16": "app/icon.png",
+    "48": "app/icon.png",
+    "128": "app/icon.png"
+  },
+  "browser_action": {
+    "default_icon": "app/icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://web.telegram.org/*"
+      ],
+      "css": ["app/css/main.css"]
+    }
+  ]
+}
